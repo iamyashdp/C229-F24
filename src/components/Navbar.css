@@ -1,0 +1,44 @@
+/* 
+  File: Navbar.css
+  Student Name: Yash Patel
+  StudentID: 301089593
+  Date: 2024/09/13
+*/
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333333;
+  padding: 15px 7%;
+  transition: 0.5s;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.logo {
+  width: 60px;
+  cursor: pointer;
+}
+
+ul{
+  flex: 1;
+  list-style: none;
+  text-align:center;
+}
+
+ul li{
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.toggle-button{
+  width: 40px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.dark .navbar{
+  background: #000000;
+  color: #ffffff;
