@@ -8,8 +8,9 @@ Date: 2024/09/13
 import React from 'react';
 import './About.css';
 import profileImage from '../assets/profile-image.jpg'; 
-import resume from '../assets/resume.pdf'; 
+import resume from '../assets/sample-resume.pdf'; 
 
+// About page component
 const About = () => {
   return (
     <div className="about-page">

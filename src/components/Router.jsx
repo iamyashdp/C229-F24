@@ -12,15 +12,16 @@ import Contact from '../pages/Contact';
 import Services from '../pages/Service';
 import Projects from '../pages/Projects';
 
+// Router component for defining routes
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Service" element={<Services />} />
-        <Route path="/Projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/service" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   );

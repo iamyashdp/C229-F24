@@ -5,19 +5,22 @@
   Date: 2024/09/13
 */
 
-
-*{
+/* Global reset and font styling */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
-.container{
+
+/* Container styling */
+.container {
   width: 100vw;
   min-height: 100vh;
-  background: #f0f0f0;
+  background: #f0f0f0; /* Light mode background */
 }
 
-.container.dark{
-  background: #1f1f1f;
+/* Dark mode background */
+.container.dark {
+  background: #1f1f1f; /* Dark mode background */
 }

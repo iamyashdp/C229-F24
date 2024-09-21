@@ -1,46 +1,57 @@
 /* 
-  File: About.css
-  Student Name: Yash Patel
-  StudentID: 301089593
-  Date: 2024/09/13
+File: About.css
+Student Name: Yash Patel
+StudentID: 301089593
+Date: 2024/09/13
 */
+
+/* Base styles for About page */
 .about-page {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
 }
 
+/* Styles for sections within the About page */
 .about-section {
   margin-bottom: 40px;
 }
 
+/* Styles for headings */
 h1 {
   margin-bottom: 20px;
 }
-.about-section a{
-  color: #70aef0;
+
+h2 {
+  margin-bottom: 15px;
 }
 
+/* Styles for links within sections */
+.about-section a {
+  color: #56a0ee;
+}
+
+/* Profile image styles */
 .profile-image {
   width: 200px;
   height: auto;
   border-radius: 50%;
+  border-style: none;
   margin-bottom: 20px;
 }
 
-.dark {
+/* Dark mode styles */
+.dark .about-page {
   background-color: #333;
 }
 
-.dark h1, .dark h2 {
+.dark h1,
+.dark h2 {
   color: #ffffff;
-  margin-bottom: 15px;
 }
 
 .dark p {
   color: #bababa;
 }
 
-.dark .profile-image {
-  border: 1px solid #fff;
-}
+

@@ -1,10 +1,137 @@
 /* 
-  File: Home.css
-  Student Name: Yash Patel
-  StudentID: 301089593
-  Date: 2024/09/13
+File: Home.css
+Student Name: Yash Patel
+StudentID: 301089593
+Date: 2024/09/13
 */
 
-.dark .home{
-  color: #e0e0e0;
+/* Base styles for Home page */
+.home {
+  padding: 20px;
+}
+
+/* Hero Section */
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f0f0; /* Light background for light mode */
+  color: #000; /* Text color for light mode */
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+/* Services Section */
+.services-overview {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.services-overview h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.services-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  flex: 1 1 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Call to Action Section */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Dark Mode Styles */
+.dark .intro {
+  background-color: #1f1f1f; 
+  color: #fff; 
+}
+
+.dark .cta-button {
+  background-color: #4CAF50; /* Keeping the same green as light mode */
+}
+
+.dark .cta-button:hover {
+  background-color: #45a049; 
+}
+
+.dark .services-overview {
+  background-color: #1f1f1f; 
+  color: #fff; 
+}
+
+.dark .service-item {
+  background-color: #3a3a3a; 
+  color: #ddd; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.dark .service-item h3 {
+  color: #fff; 
+}
+
+.dark .service-item p {
+  color: #bbb; 
+}
+
+.dark .cta h2 {
+  color: #fff; 
 }

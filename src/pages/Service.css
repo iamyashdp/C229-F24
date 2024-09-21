@@ -1,11 +1,11 @@
 /* 
-  File: Service.css
-  Student Name: Yash Patel
-  StudentID: 301089593
-  Date: 2024/09/13
+File: Service.css
+Student Name: Yash Patel
+StudentID: 301089593
+Date: 2024/09/13
 */
 
-
+/* Base styles for Services page */
 .services-page {
   max-width: 800px;
   margin: 40px auto;
@@ -33,26 +33,32 @@
 }
 
 .service-tile img {
-  width: 50px;
-  height: 50px;
+  width: 250px;
+  height: 125px;
   margin-bottom: 10px;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .service-tile h3 {
-  margin-top: 0px ;
+  margin-top: 0;
 }
 
 .service-tile p {
   font-size: 16px;
-  color: #666;
+  color: #666; /* Dark gray text color for light mode */
 }
 
-
-.dark h1, .dark h2 {
-  color: #ffffff;
+/* Dark mode styles */
+.dark .services-page {
+  background-color: #1f1f1f; /* Dark background for dark mode */
 }
 
-.dark h3 {
-  color: #bababa;
+.dark .services-page h1,
+.dark .services-page h2,
+.dark .services-page h3 {
+  color: #ffffff; /* White color for headers in dark mode */
+}
+
+.dark .service-tile p {
+  color: #bbb; /* Light gray text color for dark mode */
 }
