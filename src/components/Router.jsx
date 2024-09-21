@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
-import Service from '../pages/Service';
+import Services from '../pages/Service';
 import Projects from '../pages/Projects';
 
 const Router = () => {
@@ -17,10 +17,10 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Service" element={<Services />} />
+        <Route path="/Projects" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   );

@@ -4,8 +4,7 @@
   StudentID: 301089593
   Date: 2024/09/13
 */
-
-.navbar{
+.navbar {
   width: 100%;
   display: flex;
   align-items: center;
@@ -22,23 +21,150 @@
   cursor: pointer;
 }
 
-ul{
+ul {
   flex: 1;
   list-style: none;
-  text-align:center;
+  text-align: center;
+  padding: 0;
 }
 
-ul li{
+ul li {
   display: inline-block;
   margin: 10px 20px;
 }
 
-.toggle-button{
-  width: 40px;
-  cursor: pointer;
-  margin-left: 40px;
+/* Add styles for anchor tags within the navbar */
+ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.dark .navbar{
+/* Change color on hover for anchor links */
+ul li a:hover {
+  color: #dddddd;
+}
+
+/* Toggle button for dark/light mode */
+.toggle-button {
+  width: 25px;
+  cursor: pointer;
+  margin-left: 20px; /* Adjusted margin to increase spacing between logo and toggle button */
+}
+
+/* Dark mode styles */
+.dark .navbar {
   background: #000000;
   color: #ffffff;
+}
+
+.dark ul li a {
+  color: #ffffff;
+}
+
+.dark ul li a:hover {
+  color: #627bf3;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu-open {
+  display: block;
+}
+
+/* Add media queries for mobile devices */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 35px;
+  }
+
+  ul {
+    flex: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  ul li a {
+    font-size: 16px;
+  }
+
+  .toggle-button {
+    margin-left: 10px;
+    width: 30px;
+    vertical-align: middle;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .hamburger{
+    width: 30px;
+
+  }
+
+  ul {
+    display: none;
+  }
+
+  .menu-open {
+    display: block;
+  }
+
+  /* Include toggle button in menu list */
+  .toggle-button {
+    margin-left: 0;
+    width: 30px;
+  }
+
+  .menu-open ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-open ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-open ul li a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  ul li a {
+    font-size: 14px;
+  }
+}

@@ -5,6 +5,52 @@
   Date: 2024/09/13
 */
 
-.dark .home{
-  color: #e0e0e0;
+.projects-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.projects-page h1 {
+  margin-bottom: 20px;
+}
+
+.projects-section {
+  margin-bottom: 40px;
+}
+
+.project-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-tile {
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.project-tile img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.project-tile h3 {
+  margin-top: 0px;
+}
+
+.project-tile p {
+  font-size: 16px;
+  color: #666;
+}
+
+.dark h1, .dark h2 {
+  color: #ffffff;
+}
+
+.dark h3 {
+  color: #bababa;
 }
